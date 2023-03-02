@@ -112,7 +112,7 @@
   </div>
 
   <EmulationTitleDetail v-if="isShowDetail" @closeButtonOnClick="showDialog" />
-  <Charts />
+
 </template>
 
 <script>
@@ -120,12 +120,11 @@ import MSingleSelect from "../../components/base/MSingleSelect.vue";
 import EmulationTitleDetail from "./EmulationTitleDetail.vue";
 import ENUM from "../../script/enum.js";
 import BaseList from "../../script/base/BaseList.js";
-import Charts from "./Charts.vue";
 
 export default {
   name: "EmulationTitle",
   extends: BaseList,
-  components: { MSingleSelect, EmulationTitleDetail, Charts },
+  components: { MSingleSelect, EmulationTitleDetail },
   data() {
     return {
       isShowDetail: false,
